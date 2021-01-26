@@ -124,6 +124,8 @@ export default {
         sort: this.sort,
         order: this.order
       }).then(data => {
+        console.log(data);
+        
         this.total = data.total;
         this.pushers = data.rows;
       });
